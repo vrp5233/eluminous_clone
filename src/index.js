@@ -4,16 +4,14 @@ import App from "./App";
 // import "./GlobleStyle.css";
 import reportWebVitals from "./reportWebVitals";
 
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/js/bootstrap.js";
+import "bootstrap/dist/js/bootstrap.bundle.js";
 
+import "./assets/js/custom.js";
+import "./GlobleStyle.css";
 
-// import 'bootstrap/dist/css/bootstrap.min.css';
-// import 'bootstrap/dist/js/bootstrap.js';
-// import 'bootstrap/dist/js/bootstrap.bundle.js';
-
-import 'bootstrap/dist/css/bootstrap.min.css';
-import './assets/js/custom.js';
-
-// import 'typeface-inter';
+import 'typeface-inter';
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(

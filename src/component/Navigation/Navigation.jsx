@@ -1,40 +1,51 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
-import { Nav, Navbar, NavDropdown, ButtonGroup, Container } from "react-bootstrap";
+import { Nav, Navbar, Container } from "react-bootstrap";
+import MenuList from "./MenuList";
+import "./Navigation.css";
 import { NavigationWrapper } from "./Navigation.style";
 
-const Navigation = () => {
-   const navigation = [
-      { name: "home", href: "/", current: true },
-      { name: "About", href: "/about", current: false },
-   ];
+import ButtonCustom from "../Button/ButtonCustom";
 
-   return (
-      <NavigationWrapper expand="lg">
-         <Container>
-            <Navbar.Brand href="#">
-               <Link to="/">
-                  <img src="images/eluminous-pvt-ltd_black.svg" alt="Logo" />
-               </Link>
-            </Navbar.Brand>
-            <Navbar.Toggle aria-controls="navbarScroll" />
-            <Navbar.Collapse id="navbarScroll">
-               <Nav
-                  className="ml-auto my-2 my-lg-0"
-                  style={{ maxHeight: '100px' }}
-                  navbarScroll
-               >
-                  <Nav.Link href="#action1">Home</Nav.Link>
-                  <Nav.Link href="#action2">Services</Nav.Link>
-                  <NavDropdown title="Link" id="navbarScrollingDropdown">
-                     <NavDropdown.Item href="#action3">Services 2</NavDropdown.Item>
-                     <NavDropdown.Item href="#action4">Services 2</NavDropdown.Item>
-                  </NavDropdown>
-               </Nav>
-            </Navbar.Collapse>
-         </Container>
-      </NavigationWrapper>
-   );
+const Navigation = () => {
+  // Sticky Menu Area
+  useEffect(() => {
+    window.addEventListener("scroll", isSticky);
+    return () => {
+      window.removeEventListener("scroll", isSticky);
+    };
+  });
+  /* Method that will fix header after a specific scrollable */
+  const isSticky = (e) => {
+    const header = document.querySelector("header");
+    const scrollTop = window.scrollY;
+    scrollTop >= 10
+      ? header.classList.add("is-sticky")
+      : header.classList.remove("is-sticky");
+  };
+  return (
+    <NavigationWrapper>
+      <Navbar expand="lg">
+        <Container>
+          <Navbar.Brand href="#">
+            <img src="images/eluminous-pvt-ltd_black.svg" alt="Logo" />
+          </Navbar.Brand>
+          <Navbar.Toggle aria-controls="navbarScroll" />
+          <Navbar.Collapse id="navbarScroll">
+            <Nav className=" w-100 d-flex justify-content-center" navbarScroll>
+              <MenuList />
+            </Nav>
+          </Navbar.Collapse>
+          <ButtonCustom
+            BtnTransparent={false}
+            linkUrl="/about-us"
+            titleText="Get a Quote"
+            colorChange=""
+          />
+        </Container>
+      </Navbar>
+    </NavigationWrapper>
+  );
 };
 
 export default Navigation;

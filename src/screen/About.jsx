@@ -2,7 +2,7 @@ import React from "react";
 import Base from "../core/Base";
 
 
-const AboutComponent = () => {
+const OurCompany = () => {
   return (
     <Base>
       <h1>About</h1>
@@ -10,4 +10,4 @@ const AboutComponent = () => {
   );
 };
 
-export default AboutComponent;
+export default OurCompany;
