@@ -1,5 +1,19 @@
 import styled from "styled-components";
 
+export const NavigationToolbarWrapper = styled.div`
+  padding: 7px 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-size: 12px;
+  color: #414549;
+  line-height: 1.2;
+  letter-spacing: 0.6px;
+  & svg {
+    font-size: 20px;
+    margin-right: 6px;
+  }
+`;
 export const NavigationWrapper = styled.header`
   position: fixed;
   top: 0;
@@ -14,8 +28,11 @@ export const NavigationWrapper = styled.header`
     box-shadow: 0 2px 17px rgb(0 0 0 / 11%);
     transition: var(--trans);
   }
+  & nav {
+    padding: 0;
+  }
   & .container {
-    max-width: 1700px;
+    max-width: 1730px;
   }
   & .navbar-brand img {
     max-width: 220px;
@@ -41,6 +58,16 @@ export const NavigationWrapper = styled.header`
         background-color: transparent;
         cursor: pointer;
         width: 100%;
+        & svg {
+          transition: var(--trans_a3);
+          font-size: 22px;
+          width: auto;
+          color: rgba(var(--black3));
+        }
+        &:hover svg {
+          transform: rotate(180deg);
+          color: rgba(var(--blue));
+        }
       }
       & a,
       & button {
@@ -129,5 +156,11 @@ export const NavigationWrapper = styled.header`
     -webkit-transform: translateY(33px);
     -ms-transform: translateY(33px);
     transform: translateY(33px);
+  }
+  & .btn {
+    min-width: 250px;
+    min-height: 52px;
+    font-size: 18px;
+    padding: 0 10px 0 0px;
   }
 `;

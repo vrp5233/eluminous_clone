@@ -1,11 +1,15 @@
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { Nav, Navbar, Container } from "react-bootstrap";
+import { MdEmail } from "react-icons/md";
 import MenuList from "./MenuList";
-import "./Navigation.css";
-import { NavigationWrapper } from "./Navigation.style";
-
 import ButtonCustom from "../Button/ButtonCustom";
+import "./Navigation.css";
+import {
+  NavigationWrapper,
+  NavigationToolbarWrapper,
+} from "./Navigation.style";
+
 
 const Navigation = () => {
   // Sticky Menu Area
@@ -25,10 +29,17 @@ const Navigation = () => {
   };
   return (
     <NavigationWrapper>
+      <Container>
+        <NavigationToolbarWrapper>
+          <MdEmail /> biz@eluminoustechnologies.com
+        </NavigationToolbarWrapper>
+      </Container>
       <Navbar expand="lg">
         <Container>
-          <Navbar.Brand href="#">
-            <img src="images/eluminous-pvt-ltd_black.svg" alt="Logo" />
+          <Navbar.Brand>
+            <Link to="/">
+              <img src="images/eluminous-pvt-ltd_black.svg" alt="Logo" />
+            </Link>
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="navbarScroll" />
           <Navbar.Collapse id="navbarScroll">

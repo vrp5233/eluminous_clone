@@ -15,7 +15,7 @@ export const LinkCustom = styled.div`
     min-height: 60px;
     font-size: 20px;
     font-weight: 600;
-    padding: 0 40px;
+    padding: 10px 40px;
     & svg {
       margin: 0 0 0 15px;
       font-size: 22px;

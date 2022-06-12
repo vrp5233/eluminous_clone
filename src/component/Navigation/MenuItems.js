@@ -48,9 +48,8 @@ const MenuItems = ({ items, depthLevel }) => {
             aria-expanded={dropdown ? "true" : "false"}
             onClick={() => setDropdown((prev) => !prev)}
           >
-            {items.title}{" "}
-            {depthLevel > 0 ? <span>&raquo;</span> : <span className="arrow" />}
-            <BiChevronDown />
+            {items.title}
+            {depthLevel > 0 ? "" : <BiChevronDown className="arrow" />}    
           </button>
           <Dropdown 
             depthLevel={depthLevel}

@@ -27,7 +27,7 @@ export const menuItemsData = [
   //     ],
   // },
   {
-    title: "Services",     
+    title: "Services",
     path: "/",
     submenu: [
       {
@@ -61,7 +61,7 @@ export const menuItemsData = [
     ],
   },
   {
-    title: "Hire Dedicated Developer",     
+    title: "Hire Dedicated Developer",
     path: "/",
     submenu: [
       {
@@ -70,11 +70,11 @@ export const menuItemsData = [
       },
       {
         title: "Hire Angular Developer",
-        path: "/",
+        path: "/hire-angular-developers",
       },
       {
         title: "Hire ReactJS Developer",
-        path: "/",
+        path: "/hire-reactjs-developesr",
       },
       {
         title: "Hire VueJS Developer",
@@ -95,19 +95,19 @@ export const menuItemsData = [
     ],
   },
   {
-    title: "Hire Dedicated VA",     
+    title: "Hire Dedicated VA",
     path: "/",
   },
   {
-    title: "Portfolio",     
+    title: "Portfolio",
     path: "/",
   },
   {
-    title: "Blog",     
+    title: "Blog",
     path: "/",
   },
   {
-    title: "About Us",     
+    title: "About Us",
     path: "/",
     submenu: [
       {
@@ -115,19 +115,19 @@ export const menuItemsData = [
         path: "/about-us",
       },
       {
-        title: "Why Us",        
+        title: "Why Us",
         path: "/",
       },
       {
-        title: "Engagement Models",        
+        title: "Engagement Models",
         path: "/",
       },
       {
-        title: "Careers",        
+        title: "Careers",
         path: "/",
       },
       {
-        title: "Company Brochure",        
+        title: "Company Brochure",
         path: "/",
       },
     ],
