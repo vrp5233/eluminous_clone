@@ -1,9 +1,9 @@
 import styled from "styled-components";
 
-export const HireDedicatedExpertiseWrapper = styled.section`
-  padding: 120px 0;
-  .row {
-    margin: 0 0 60px;
+export const ExpertiseWrapper = styled.section`
+  padding: 0 0 80px;
+  .btn {
+    margin: 60px 0 0 0;
   }
 `;
 
@@ -20,10 +20,10 @@ export const SmallTitleWrap = styled.h3`
 `;
 
 export const ExpertiseBox = styled.div`
-  & span {
+  span {
     margin-bottom: 20px;
     display: inline-block;
-    & img {
+    img {
       max-width: 80px;
       width: 100%;
     }
@@ -34,7 +34,8 @@ export const ExpertiseBoxTitle = styled.h3`
   font-size: 26px;
   font-weight: 700;
   margin-bottom: 40px;
-  max-width: 280px;
+  /* max-width: 280px; */
+  min-height: 60px;
 `;
 export const ExpertiseBoxPara = styled.p`
   font-size: 20px;

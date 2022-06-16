@@ -3,37 +3,47 @@ import { Container, Row, Col } from "react-bootstrap";
 import ButtonCustom from "../../Button/ButtonCustom";
 // import svg1 from "../../../assets/images/HireDedicated/icons/cross-platform.svg";
 import {
-  HireDedicatedExpertiseWrapper,
+  ExpertiseWrapper,
   TitleWrap,
   SmallTitleWrap,
   ExpertiseBox,
   ExpertiseBoxTitle,
   ExpertiseBoxPara,
-} from "./HireDedicatedExpertise.style";
-const HireDedicatedExpertise = ({ expertiseData }) => {
-  // const fileIconsPath = window.location.origin + "/images/HireDedicated/icons/";
+} from "./Expertise.style";
+const Expertise = ({ expertiseData }) => {
+  const fileIconsPath = window.location.origin + "/images/HireDedicated/icons/";
+  const filePath = window.location.origin + "/images/HireDedicated/";
   return (
     <>
-      <HireDedicatedExpertiseWrapper className="black">
+      <ExpertiseWrapper className="black">
         <Container>
           <TitleWrap>{expertiseData.expertiseIns.title}</TitleWrap>
           <SmallTitleWrap>{expertiseData.expertiseIns.subTitle}</SmallTitleWrap>
           <Row>
             {expertiseData.expertiseIns.expertLists.map((expertList, index) => {
               return (
-                <Col xxl={3}>
+                <Col xxl={3} key={expertList.expertTitle}>
                   <ExpertiseBox>
                     <span>
                       <img
-                        // src={fileIconsPath + `${expertList.expertImage}`}
-                        src={expertList.expertImage}
+                        src={fileIconsPath + `${expertList.expertImage}`}
+                        // src={expertList.expertImage}
                         alt="Title"
                       />
                     </span>
-                    <ExpertiseBoxTitle class="title">
-                      {expertList.expertTitle}
+                    <ExpertiseBoxTitle
+                      className="title"
+                      dangerouslySetInnerHTML={{
+                        __html: expertList.expertTitle,
+                      }}
+                    >
+                      {/* {expertList.expertTitle} */}
                     </ExpertiseBoxTitle>
-                    <ExpertiseBoxPara dangerouslySetInnerHTML={{__html: expertList.expertSubTitle}}>
+                    <ExpertiseBoxPara
+                      dangerouslySetInnerHTML={{
+                        __html: expertList.expertSubTitle,
+                      }}
+                    >
                       {/* {expertList.expertSubTitle} */}
                     </ExpertiseBoxPara>
                   </ExpertiseBox>
@@ -44,14 +54,14 @@ const HireDedicatedExpertise = ({ expertiseData }) => {
           <ButtonCustom
             ParentClass="text-center"
             BtnTransparent={true}
-            linkUrl="#contact-form-top"
-            titleText="Hire Angular Developer"
+            linkUrl={expertiseData.btnLink}
+            titleText={expertiseData.btnText}
             colorChange=""
           />
         </Container>
-      </HireDedicatedExpertiseWrapper>
+      </ExpertiseWrapper>
     </>
   );
 };
 
-export default HireDedicatedExpertise;
+export default Expertise;

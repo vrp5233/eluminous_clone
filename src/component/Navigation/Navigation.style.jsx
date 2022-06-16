@@ -9,7 +9,7 @@ export const NavigationToolbarWrapper = styled.div`
   color: #414549;
   line-height: 1.2;
   letter-spacing: 0.6px;
-  & svg {
+  svg {
     font-size: 20px;
     margin-right: 6px;
   }
@@ -21,6 +21,7 @@ export const NavigationWrapper = styled.header`
   width: 100%;
   z-index: 9990;
   background-color: rgba(var(--white));
+  background-color: ${({bg}) => bg};
   transition: var(--trans_a3);
   &.is-sticky {
     background-color: rgba(var(--white));
@@ -28,37 +29,37 @@ export const NavigationWrapper = styled.header`
     box-shadow: 0 2px 17px rgb(0 0 0 / 11%);
     transition: var(--trans);
   }
-  & nav {
+  nav {
     padding: 0;
   }
-  & .container {
+  .container {
     max-width: 1730px;
   }
-  & .navbar-brand img {
+  .navbar-brand img {
     max-width: 220px;
   }
-  & .menus {
+  .menus {
     display: flex;
     list-style: none;
-    & .menu-items {
+    .menu-items {
       position: relative;
       font-size: 14px;
       padding-right: 18px;
       padding-left: 18px;
-      & a {
+      a {
         display: block;
         font-size: inherit;
         color: inherit;
         text-decoration: none;
       }
-      & button {
+      button {
         color: inherit;
         font-size: inherit;
         border: none;
         background-color: transparent;
         cursor: pointer;
         width: 100%;
-        & svg {
+        svg {
           transition: var(--trans_a3);
           font-size: 22px;
           width: auto;
@@ -69,8 +70,8 @@ export const NavigationWrapper = styled.header`
           color: rgba(var(--blue));
         }
       }
-      & a,
-      & button {
+      a,
+      button {
         font-weight: 600;
         font-size: 18px;
         color: #22292f;
@@ -83,13 +84,15 @@ export const NavigationWrapper = styled.header`
         display: block;
       }
       &:hover > a,
-      &:hover > button {
+      &:hover > button,
+      &.active a,
+      &.active button {
         text-decoration: none;
         border-bottom-color: #2166f3;
       }
     }
   }
-  & .dropdownMenu {
+  .dropdownMenu {
     list-style: none;
     position: absolute;
     width: 300px;
@@ -109,15 +112,15 @@ export const NavigationWrapper = styled.header`
     -webkit-box-shadow: 0 2px 3px rgb(0 0 0 / 10%);
     box-shadow: 0 2px 3px rgb(0 0 0 / 10%);
     z-index: 9999;
-    & .dropdown-submenu {
+    .dropdown-submenu {
       position: absolute;
       left: 100%;
       top: -7px;
     }
-    & .menu-items {
+    .menu-items {
       padding: 0 30px;
       position: relative;
-      & a {
+      a {
         border: 0;
         text-transform: capitalize;
         font-size: 14px;
@@ -149,7 +152,7 @@ export const NavigationWrapper = styled.header`
       }
     }
   }
-  & .dropdownMenu.show {
+  .dropdownMenu.show {
     display: block;
     visibility: visible;
     opacity: 1;
@@ -157,7 +160,7 @@ export const NavigationWrapper = styled.header`
     -ms-transform: translateY(33px);
     transform: translateY(33px);
   }
-  & .btn {
+  .btn {
     min-width: 250px;
     min-height: 52px;
     font-size: 18px;

@@ -8,6 +8,9 @@ export const TitleWrap = styled.h1`
   font: 900 90px/95px "Inter", sans-serif;
   margin-bottom: 39px;
   color: rgba(var(--blue));
+  @media (max-width: ${({ theme }) => theme.media.mobile767}) {
+    font: 900 30px/95px "Inter", sans-serif;
+  }
 `;
 
 export const SmallTitleWrap = styled.h2`
@@ -38,7 +41,7 @@ export const ClutchReview = styled.div`
   right: 15px;
   top: 135px;
   padding: 15px 15px;
-  & p {
+  p {
     font: 14px / 22px "Inter", sans-serif;
     max-width: 255px;
     color: rgba(var(--black));
@@ -47,16 +50,17 @@ export const ClutchReview = styled.div`
 
 export const ClutchLogoRate = styled.div`
   margin: 0 0 17px 0;
-  & img {
+  img {
     max-width: 65px;
   }
 `;
 export const StarWrap = styled.div`
-  & span {
+  span {
     margin-right: 10px;
   }
-  & ul {
-    & li {
+  ul {
+    li {
+      display: flex;
       font: 22px / normal "Inter", sans-serif;
       margin: 0 -1px;
       color: #fd3e2f;
@@ -71,15 +75,15 @@ export const List = styled.ul`
   display: flex;
   padding: 35px 10px 25px;
   margin: 0 0 0 45px;
-  & li {
+  li {
     flex: 1;
-    & .icon {
+    .icon {
       max-width: 61px;
       width: 100%;
       margin: 0 auto 20px;
       height: 50px;
     }
-    & .text {
+    .text {
       font-size: 18px;
     }
   }

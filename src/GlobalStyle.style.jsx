@@ -1,3 +1,5 @@
+import { createGlobalStyle } from "styled-components";
+const GlobalStyles = createGlobalStyle`
 :root {
   --white: 255, 255, 255;
   --blue: 33, 102, 243;
@@ -10,6 +12,8 @@
   --revelBlue: 78, 104, 138;
   --inter: "Inter", sans-serif;
   --trans_a3: all 0.3s;
+
+  --mediaMobile767: 767px;
 }
 
 *,
@@ -21,24 +25,24 @@ ol {
   padding: 0;
   list-style: none;
   font-family: "Inter", sans-serif;
+  color: rgba;
 }
 
 body {
-  height: 3000px;
+  /* height: 3000px; */
   padding: 113px 0 0 0;
   color: rgba(var(--black2));
 }
 
 section {
-    padding: 80px 0;
-  }
-  
+  padding: 80px 0;
+}
+ 
 .container {
   max-width: 1730px;
 }
 
 /* Color Css Start */
-
 .fw900 {
   font-weight: 900 !important;
 }
@@ -99,41 +103,50 @@ section {
 .black2 {
   color: rgba(var(--black2)) !important;
 }
+.black3 {
+  color: rgba(var(--black3)) !important;
+}
 
 .revelBlue {
   color: rgba(var(--revelBlue)) !important;
 }
 
 .whiteBg {
-  color: rgba(var(--white)) !important;
+  background-color: rgba(var(--white)) !important;
 }
 
 .blackBg {
-  color: rgba(var(--black)) !important;
+  background-color: rgba(var(--black)) !important;
 }
 
 .blueBg {
-  color: rgba(var(--blue)) !important;
+  background-color: rgba(var(--blue)) !important;
 }
 
 .blackTurmericBg {
-  color: rgba(var(--blackTurmeric)) !important;
+  background-color: rgba(var(--blackTurmeric)) !important;
 }
 
 .greyBg {
-  color: rgba(var(--grey)) !important;
+  background-color: rgba(var(--grey)) !important;
 }
 
 .redBg {
-  color: rgba(var(--red)) !important;
+  background-color: rgba(var(--red)) !important;
 }
 
 .black2Bg {
-  color: rgba(var(--black2)) !important;
+  background-color: rgba(var(--black2)) !important;
+}
+
+.black3Bg {
+  background-color: rgba(var(--black3)) !important;
 }
 
 .revelBlueBg {
-  color: rgba(var(--revelBlue)) !important;
+  background-color: rgba(var(--revelBlue)) !important;
 }
 
 /* Color Css End */
+`;
+export default GlobalStyles;

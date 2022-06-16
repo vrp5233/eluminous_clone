@@ -1,13 +1,15 @@
 import React from "react";
 import Base from "../../core/Base";
-import { hireDedicatedDevelopers } from "../../data/hireDedicatedDevelopers";
-// import HireDedicatedBanner from "../../component/HireDedicated/Banner/HireDedicatedBanner"
-// import HireDedicatedExpertise from "../../component/HireDedicated/Expertise/HireDedicatedExpertise"
+import { HireReactData } from "../../data/hireDedicatedDevelopers";
+import TopBanner from "../../component/HireDedicated/TopBanner/TopBanner";
+import Expertise from "../../component/HireDedicated/Expertise/Expertise";
+import WhyTech from "../../component/HireDedicated/WhyTech/WhyTech";
 const HireDedicatedReact = () => {
   return (
     <Base>
-      {/* <HireDedicatedBanner allData={hireDedicatedDevelopers.react} /> */}
-      {/* <HireDedicatedExpertise expertiseData={hireDedicatedDevelopers.react} /> */}
+      <TopBanner allData={HireReactData} />
+      <Expertise expertiseData={HireReactData} />
+      {/* <WhyTech whyTechData={HireReactData} /> */}
     </Base>
   );
 };

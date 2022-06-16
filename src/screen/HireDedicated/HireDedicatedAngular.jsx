@@ -1,13 +1,18 @@
 import React from "react";
 import Base from "../../core/Base";
 import { HireAngularData } from "../../data/hireDedicatedDevelopers";
-import HireDedicatedBanner from "../../component/HireDedicated/Banner/HireDedicatedBanner"
-import HireDedicatedExpertise from "../../component/HireDedicated/Expertise/HireDedicatedExpertise"
+import TopBanner from "../../component/HireDedicated/TopBanner/TopBanner";
+import Expertise from "../../component/HireDedicated/Expertise/Expertise";
+import WhyTech from "../../component/HireDedicated/WhyTech/WhyTech";
+import ReviewSlider from "../../component/HireDedicated/ReviewSlider/ReviewSlider";
 const HireDedicatedAngular = () => {
   return (
     <Base>
-      <HireDedicatedBanner allData={HireAngularData} />
-      <HireDedicatedExpertise expertiseData={HireAngularData}/>
+      {/* <GlobleStyles /> */}
+      <TopBanner allData={HireAngularData} />
+      <Expertise expertiseData={HireAngularData} />
+      <WhyTech whyTechData={HireAngularData} />
+      <ReviewSlider ReviewSliderData={HireAngularData} />
     </Base>
   );
 };

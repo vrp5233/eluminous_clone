@@ -10,8 +10,8 @@ import {
   NavigationToolbarWrapper,
 } from "./Navigation.style";
 
-
 const Navigation = () => {
+  const filePath = window.location.origin + "/images/";
   // Sticky Menu Area
   useEffect(() => {
     window.addEventListener("scroll", isSticky);
@@ -38,7 +38,8 @@ const Navigation = () => {
         <Container>
           <Navbar.Brand>
             <Link to="/">
-              <img src="images/eluminous-pvt-ltd_black.svg" alt="Logo" />
+              <img src={filePath + "eluminous-pvt-ltd_black.svg"} alt="Logo" />
+              {/* <img src={filePath + `${whyTechData.whyTechs.imgLogo}`} alt="Logo" /> */}
             </Link>
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="navbarScroll" />

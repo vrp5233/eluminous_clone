@@ -10,6 +10,7 @@ const ButtonCustom = ({
   colorChange,
   BtnTransparent,
   ParentClass,
+  target,
 }) => {
   return (
     // <Link
@@ -21,7 +22,7 @@ const ButtonCustom = ({
     //   <BsArrowRight />
     // </Link>
     <LinkCustom BtnTransparent={BtnTransparent} className={ParentClass}>
-      <Link to={linkUrl} className={`btn ${colorChange}`}>
+      <Link to={linkUrl} className={`btn ${colorChange}`} target={target}>
         {titleText}
         <CgArrowLongRight />
       </Link>

@@ -74,7 +74,7 @@ export const menuItemsData = [
       },
       {
         title: "Hire ReactJS Developer",
-        path: "/hire-reactjs-developesr",
+        path: "/hire-reactjs-developers",
       },
       {
         title: "Hire VueJS Developer",
