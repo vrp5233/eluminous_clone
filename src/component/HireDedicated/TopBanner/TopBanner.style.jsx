@@ -8,9 +8,7 @@ export const TitleWrap = styled.h1`
   font: 900 90px/95px "Inter", sans-serif;
   margin-bottom: 39px;
   color: rgba(var(--blue));
-  @media (max-width: ${({ theme }) => theme.media.mobile767}) {
-    font: 900 30px/95px "Inter", sans-serif;
-  }
+  
 `;
 
 export const SmallTitleWrap = styled.h2`
