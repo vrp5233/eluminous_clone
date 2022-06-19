@@ -103,53 +103,63 @@ export const HireAngularData = {
       },
     ],
   },
-  reviewLists: {
-    heading: "Great Reviews on Clutch and GoodFirms",
-    avtarLists: [
+  faqs: {
+    faqLists: [
+      {
+        id: "0",
+        title: "What is AngularJS used for?",
+        paragraph:
+          "AngularJS is a framework used to build dynamic web applications. It allows angular developers to use HTML as a template language and extension of HTML's syntax to clearly express your application's components. Data binding and dependency injection eliminates the requirement of writing code you would have to write otherwise.",
+      },
       {
         id: "1",
-        review:
-          "The workflow between both teams has always been open, streamlined, and responsive.",
-        img: "Stewart-Gauld.webp",
-        name: "Stewart H. Gauld",
-        post:
-          "Project &amp; Content Director, <br /> Business Development Group",
-        rating: "5.0",
-        quality: "5.0",
-        schedule: "5.0",
-        cost: "4.5",
-        refer: "5.0",
+        title: "Why Choose AngularJS for Web Application Development?",
+        paragraph:
+          "AngularJS provides dynamic features and exclusive advantages that make it stand out from other frameworks. It put forward an agile web app development process that is highly efficient in saving both time and cost required to complete the entire web app development process. It facilitates complete assistance in the entire process and offers features such as dependency injection, parallel development, simple architecture, and testing.",
       },
       {
         id: "2",
-        review:
-          "They were very fast, and the team is big enough to tap on each other's expertise.",
-        img: "Yeng-Hwee-Tay.webp",
-        name: "Yeng Hwee Tay",
-        post: "Director, ClickTwoStart",
-        rating: "4.5",
-        quality: "5.0",
-        schedule: "5.0",
-        cost: "4.5",
-        refer: "5.0",
+        title: "What are the advantages of AngularJS?",
+        paragraph: null,
+        ulLists: [
+          {
+            ulList:
+              "<b>Open Source:</b> Angularjs is an open-source JavaScript MVC framework, therefore, custom applications can be available to anyone at an affordable cost.",
+          },
+          //   two: "<b>Google-supported framework:</b> AngularJS is supported by a large community, Google. The framework has around 45k stars on <a href="," target=":_blank,">Github</a> and over 500.000 downloads on weekly basis from <a href=":https,'://www.npmjs.com/package/angular" target=":_blank,">npm</a>.",
+          // },
+          {
+            ulList:
+              "<b>Single page application (SPA):</b> Single page application means only a single HTML web page is loaded and further updation is done on the same page only. User-friendliness and fast loading are the key features for SPA.",
+          },
+        ],
       },
       {
         id: "3",
-        review:
-          "eLuminous dedicated a project manager to our project who had excellent communication skills.",
-        img: "Steve-Lim.webp",
-        name: "Steve Lim",
-        post: "Managing Director, Web Design &amp; Development Agency",
-        rating: "5.0",
-        quality: "4.0",
-        schedule: "5.0",
-        cost: "4.5",
-        refer: "5.0",
+        title: "Is Angular good for large applications?",
+        paragraph:
+          "You know the customers need to wait for content to load while connecting with large-scale/enterprise applications. Angular is the best choice to make it faster loading and seamless visualizations across all devices.",
+        ulLists: [
+          {
+            ulList: "Gmail",
+          },
+          {
+            ulList: "Forbes",
+          },
+          {
+            ulList: "Google",
+          },
+          {
+            ulList: "IBM",
+          },
+          {
+            ulList: "Paypal",
+          },
+        ],
       },
     ],
   },
 };
-
 export const HireReactData = {
   title: "Hire ReactJS",
   titleSpan: "Developers",
@@ -230,4 +240,93 @@ export const HireReactData = {
       },
     ],
   },
+};
+export const HireReviewData = {
+  reviewLists: {
+    heading: "Great Reviews on Clutch and GoodFirms",
+    avtarLists: [
+      {
+        id: "1",
+        review:
+          "The workflow between both teams has always been open, streamlined, and responsive.",
+        img: "Stewart-Gauld.webp",
+        name: "Stewart H. Gauld",
+        post:
+          "Project &amp; Content Director, <br /> Business Development Group",
+        rating: "5.0",
+        quality: "5.0",
+        schedule: "5.0",
+        cost: "4.5",
+        refer: "5.0",
+      },
+      {
+        id: "2",
+        review:
+          "They were very fast, and the team is big enough to tap on each other's expertise.",
+        img: "Yeng-Hwee-Tay.webp",
+        name: "Yeng Hwee Tay",
+        post: "Director, ClickTwoStart",
+        rating: "4.5",
+        quality: "5.0",
+        schedule: "5.0",
+        cost: "4.5",
+        refer: "5.0",
+      },
+      {
+        id: "3",
+        review:
+          "eLuminous dedicated a project manager to our project who had excellent communication skills.",
+        img: "Steve-Lim.webp",
+        name: "Steve Lim",
+        post: "Managing Director, Web Design &amp; Development Agency",
+        rating: "5.0",
+        quality: "4.0",
+        schedule: "5.0",
+        cost: "4.5",
+        refer: "5.0",
+      },
+    ],
+  },
+};
+export const HireCaseStudiesData = {
+  caseSudies: [
+    {
+      id: "1",
+      title: "Partnering Front-end Development",
+      image:
+        "https://pawardemo.000webhostapp.com/images/CaseStudies/front-end-development.webp",
+      pdfLink: "images/Casestudies/frontend-development.pdf",
+      paragraph:
+        "eLuminous reduced the cost of development by 45% and reduced time-to-market by 20% for a European Digital Marketing Agency as part of their IT process stanardization.",
+    },
+    {
+      id: "2",
+      image:
+        "https://pawardemo.000webhostapp.com/images/CaseStudies/FDA-compliant-eCommerce.webp",
+      title: "Developed FDA compliant <br />eCommerce platform in 90 days",
+      pdfLink:
+        "images/Casestudies/Getting-FDA-compliant-eCommerce-ready-within-90days.pdf",
+      paragraph:
+        "UK based Client baby care brand wanted to develop new markets for their expansion. They wanted to develop the abilities to sell through new geographies i.e. Europe and USA.",
+    },
+    {
+      id: "3",
+      image:
+        "https://pawardemo.000webhostapp.com/images/CaseStudies/ui-using-react-js.webp",
+      title: "Food delivery app with user friendly UI using ReactJs",
+      pdfLink:
+        "images/Casestudies/Food-delivery-app-with-user-friendly-UI-using-React-js.pdf",
+      paragraph:
+        "CLE course certificates are essentials for the Lawyers as a mandatory legal compliance. Hence, the key requirement was to generate course completion certificates based on the User's time zone.",
+    },
+    {
+      id: "4",
+      image:
+        "https://pawardemo.000webhostapp.com/images/CaseStudies/eLearning-management-solution.webp",
+      title: "eLearning Management Solution for CLE",
+      pdfLink: "images/Casestudies/eLearning-managemen-t-solution-for-CLE.pdf",
+      paragraph:
+        "CLE course certificates are essentials for the Lawyers as a mandatory legal compliance. Hence, the key requirement was to generate course completion certificates based on the User's time zone.",
+    },
+  ],
 };

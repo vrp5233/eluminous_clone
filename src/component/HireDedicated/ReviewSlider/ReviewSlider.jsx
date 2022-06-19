@@ -51,7 +51,9 @@ const ReviewSlider = ({ ReviewSliderData }) => {
                           <SliderHeading className="fw400 text-capitalize">
                             {ReviewSliderData.reviewLists.heading}
                           </SliderHeading>
-                          <ReviewText className="fw600">"{avtarList.review}"</ReviewText>
+                          <ReviewText className="fw600">
+                            "{avtarList.review}"
+                          </ReviewText>
                           <AvtarReviewWrapper className="reviewer common">
                             <Heading className="project_heading subTitleLine">
                               the reviewer
@@ -65,7 +67,9 @@ const ReviewSlider = ({ ReviewSliderData }) => {
                                   />
                                 </Avtar>
                                 <AvtarDetails className="nameDetailsWrap">
-                                  <span className="name fw600">{avtarList.name}</span>
+                                  <span className="name fw600">
+                                    {avtarList.name}
+                                  </span>
                                   <span
                                     className="name__details"
                                     dangerouslySetInnerHTML={{

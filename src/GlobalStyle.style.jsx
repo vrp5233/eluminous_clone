@@ -1,4 +1,4 @@
-import { createGlobalStyle } from "styled-components";
+import styled, { createGlobalStyle } from "styled-components";
 const GlobalStyles = createGlobalStyle`
 :root {
   --white: 255, 255, 255;
@@ -35,7 +35,7 @@ body {
 }
 
 section {
-  padding: 80px 0;
+  padding: 60px 0;
 }
  
 .container {
@@ -148,5 +148,16 @@ section {
 }
 
 /* Color Css End */
+`;
+export const HireTitle = styled.h2`
+  font: 700 46px / normal "Inter", sans-serif;
+  margin-bottom: 30px;
+  color: rgba(var(--black));
+`;
+export const HireSmallTitle = styled.h3`
+  font: 400 20px / 34px "Inter", sans-serif;
+  color: #000;
+  max-width: 872px;
+  margin-bottom: 90px;
 `;
 export default GlobalStyles;

@@ -1,11 +1,11 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ButtonCustom from "../../Button/ButtonCustom";
+// import { Title } from "../WhyTech/WhyTech.style";
 // import svg1 from "../../../assets/images/HireDedicated/icons/cross-platform.svg";
+import {HireTitle, HireSmallTitle} from "../../../GlobalStyle.style";
 import {
   ExpertiseWrapper,
-  TitleWrap,
-  SmallTitleWrap,
   ExpertiseBox,
   ExpertiseBoxTitle,
   ExpertiseBoxPara,
@@ -17,8 +17,8 @@ const Expertise = ({ expertiseData }) => {
     <>
       <ExpertiseWrapper className="black">
         <Container>
-          <TitleWrap>{expertiseData.expertiseIns.title}</TitleWrap>
-          <SmallTitleWrap>{expertiseData.expertiseIns.subTitle}</SmallTitleWrap>
+          <HireTitle>{expertiseData.expertiseIns.title}</HireTitle>
+          <HireSmallTitle>{expertiseData.expertiseIns.subTitle}</HireSmallTitle>
           <Row>
             {expertiseData.expertiseIns.expertLists.map((expertList, index) => {
               return (

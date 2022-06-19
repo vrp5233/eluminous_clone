@@ -7,17 +7,17 @@ export const ExpertiseWrapper = styled.section`
   }
 `;
 
-export const TitleWrap = styled.h2`
-  font: 700 46px / normal "Inter", sans-serif;
-  margin-bottom: 30px;
-`;
+// export const Title = styled.h2`
+//   font: 700 46px / normal "Inter", sans-serif;
+//   margin-bottom: 30px;
+// `;
 
-export const SmallTitleWrap = styled.h3`
-  font: 400 20px / 34px "Inter", sans-serif;
-  color: #000;
-  max-width: 872px;
-  margin-bottom: 90px;
-`;
+// export const HireSmallTitle = styled.h3`
+//   font: 400 20px / 34px "Inter", sans-serif;
+//   color: #000;
+//   max-width: 872px;
+//   margin-bottom: 90px;
+// `;
 
 export const ExpertiseBox = styled.div`
   span {
