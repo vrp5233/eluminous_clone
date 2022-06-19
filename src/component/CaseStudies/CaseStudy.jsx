@@ -41,7 +41,7 @@ const CaseStudy = ({ CaseStudyData }) => {
                 <Paragraph>{CaseSudie.paragraph}</Paragraph>
                 <ButtonCustom
                   ParentClass="text-center mt-auto"
-                  BtnTransparent={true}
+                  BtnTransparent={false}
                   target="_blank"
                   // linkUrl={`images/CaseStudies/${CaseSudie.pdfLink}`}
                   linkUrl={CaseSudie.pdfLink}

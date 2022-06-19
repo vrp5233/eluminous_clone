@@ -25,11 +25,11 @@ const Faq = ({ faqsData }) => {
                   </Accordion.Header>
                   <Accordion.Body>
                     <p>{faq.paragraph}</p>
-                    {/* <ul>
-                      {faq.ulLists.map((ulList, index) => {
+                    <ul>
+                      {/* {faq.ulLists.map((ulList, index) => {
                         return <li>{ulList.ulList}</li>;
-                      })}
-                    </ul> */}
+                      })} */}
+                    </ul>
                   </Accordion.Body>
                 </Accordion.Item>
               );
