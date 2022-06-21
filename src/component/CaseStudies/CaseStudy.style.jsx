@@ -25,6 +25,8 @@ export const CaseText = styled.div`
   /* height: 100%; */
   .btn {
     width: 100%;
+    font-size: 18px;
+    min-height: 51px;
     svg {
       display: none;
     }

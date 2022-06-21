@@ -62,19 +62,19 @@ export const menuItemsData = [
   },
   {
     title: "Hire Dedicated Developer",
-    path: "/",
+    path: "/hire-dedicated-developer",
     submenu: [
       {
         title: "Hire Dedicated Developer",
-        path: "/",
+        path: "/hire-dedicated-developer",
       },
       {
         title: "Hire Angular Developer",
-        path: "/hire-angular-developers",
+        path: "/hire-dedicated-developer/hire-angular-developers",
       },
       {
         title: "Hire ReactJS Developer",
-        path: "/hire-reactjs-developers",
+        path: "/hire-dedicated-developer/hire-reactjs-developers",
       },
       {
         title: "Hire VueJS Developer",

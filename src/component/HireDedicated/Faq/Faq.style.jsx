@@ -46,8 +46,19 @@ export const Wrapper = styled.section`
         line-height: 25px;
         font-weight: 400;
         color: rgba(var(--black));
+        margin-bottom: 10px;
         &:last-child {
-          margin: 0 0 0 0;
+          /* margin: 0 0 0 0; */
+        }
+      }
+      ul {
+        padding: 0 0 0 15px;
+        li {
+          list-style-type: disc;
+          font-size: 16px;
+          line-height: 25px;
+          font-weight: 400;
+          color: rgba(var(--black));
         }
       }
     }

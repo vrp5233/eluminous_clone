@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const ExpertiseWrapper = styled.section`
-  padding: 0 0 80px;
+  padding-top: 0;
   .btn {
     margin: 60px 0 0 0;
   }

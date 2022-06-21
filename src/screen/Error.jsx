@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import { Container } from "react-bootstrap";
 import ButtonCustom from "../component/Button/ButtonCustom";
 import Base from "../core/Base";

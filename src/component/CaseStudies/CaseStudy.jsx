@@ -1,8 +1,6 @@
 import React from "react";
 import ButtonCustom from "../Button/ButtonCustom";
 import { Col } from "react-bootstrap";
-// import svg1 from "../../../assets/images/HireDedicated/icons/cross-platform.svg";
-// import CaseStudiesimg from "https://eluminoustechnologies.com/hire-dedicated-developer/hire-angular-developers/FDA-compliant-eCommerce.webp";
 import {
   CaseBox,
   CaseImg,
@@ -19,7 +17,7 @@ const CaseStudy = ({ CaseStudyData }) => {
       {CaseStudyData.caseSudies.map((CaseSudie, index) => {
         return (
           <Col className="d-flex" key={CaseSudie.id}>
-            <CaseBox key={index} className="d-flex">
+            <CaseBox key={index} className="d-flex flex-column">
               <CaseImg>
                 <img
                   // src="images/CaseStudies/front-end-development.webp"
@@ -44,10 +42,15 @@ const CaseStudy = ({ CaseStudyData }) => {
                   BtnTransparent={false}
                   target="_blank"
                   // linkUrl={`images/CaseStudies/${CaseSudie.pdfLink}`}
-                  linkUrl={CaseSudie.pdfLink}
+                  // linkUrl={filePath + `${CaseSudie.pdfLink}`}
+                  linkUrl={filePath + `${CaseSudie.pdfLink}`}
                   titleText="Download PDF"
                   colorChange=""
                 />
+
+                <a href={filePath + `${CaseSudie.pdfLink}`} target="_blank">
+                  Download PDF
+                </a>
               </CaseText>
             </CaseBox>
           </Col>

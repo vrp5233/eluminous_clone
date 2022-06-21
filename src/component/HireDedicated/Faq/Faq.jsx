@@ -24,11 +24,32 @@ const Faq = ({ faqsData }) => {
                     {faq.title} <HiOutlineChevronDown />
                   </Accordion.Header>
                   <Accordion.Body>
-                    <p>{faq.paragraph}</p>
+                    {faq.paragraph ? (
+                      <div
+                        dangerouslySetInnerHTML={{
+                          __html: faq.paragraph,
+                        }}
+                      >
+                      </div>
+                    ) : (
+                      ""
+                    )}
                     <ul>
-                      {/* {faq.ulLists.map((ulList, index) => {
-                        return <li>{ulList.ulList}</li>;
-                      })} */}
+                      {faq.ulLists.map((ulList, index) => {
+                        return (
+                          <>
+                            {ulList.list ? (
+                              <li key={ulList.index}
+                                dangerouslySetInnerHTML={{
+                                  __html: ulList.list,
+                                }}
+                              ></li>
+                            ) : (
+                              ""
+                            )}
+                          </>
+                        );
+                      })}
                     </ul>
                   </Accordion.Body>
                 </Accordion.Item>
