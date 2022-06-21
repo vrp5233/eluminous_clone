@@ -1,7 +1,7 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 
-import ButtonCustom from "../../Button/ButtonCustom";
+import LinkCustom from "../../Button/LinkCustom";
 // import svg1 from "../../../assets/images/HireDedicated/icons/cross-platform.svg";
 import { IoIosCheckmarkCircleOutline } from "react-icons/io";
 import {
@@ -42,7 +42,7 @@ const WhyTech = ({ whyTechData }) => {
                   <BlueParagraph className="btnTitle fw700 blue">
                     Let’s innovate together.
                   </BlueParagraph>
-                  <ButtonCustom
+                  <LinkCustom
                     ParentClass=""
                     BtnTransparent={true}
                     linkUrl={whyTechData.btnLink}

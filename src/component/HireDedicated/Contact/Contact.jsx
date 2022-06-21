@@ -17,7 +17,7 @@ const Contact = ({ whyTechData }) => {
                 <TextBox></TextBox>
               </ImgBox>
             </Col>
-            <Col xxl={6}>
+            <Col xxl={6} className="d-flex align-items-center">
               <HireForm />
             </Col>
           </Row>

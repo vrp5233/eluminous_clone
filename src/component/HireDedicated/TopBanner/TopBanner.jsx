@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import ButtonCustom from "../../Button/ButtonCustom";
+import LinkCustom from "../../Button/LinkCustom";
 import { RiStarSFill } from "react-icons/ri";
 
 import {
@@ -30,7 +30,7 @@ const TopBanner = ({ allData }) => {
               </TitleWrap>
               <SmallTitleWrap>{allData.smallTitle}</SmallTitleWrap>
               <ParagraphWrap>{allData.paragraph}</ParagraphWrap>
-              <ButtonCustom
+              <LinkCustom
                 BtnTransparent={true}
                 linkUrl={allData.btnLink}
                 titleText={allData.btnText}

@@ -1,10 +1,10 @@
 import { Link } from "react-router-dom";
 import { CgArrowLongRight } from "react-icons/cg";
-import { LinkCustom } from "./ButtonCustom.style.js";
+import { BtnWrap } from "./ButtonCustom.style.js";
 // import './Button.css'
 
 // className={`btn ${colorChange}`}
-const ButtonCustom = ({
+const LinkCustom = ({
   linkUrl,
   titleText,
   colorChange,
@@ -13,13 +13,13 @@ const ButtonCustom = ({
   target,
 }) => {
   return (
-    <LinkCustom BtnTransparent={BtnTransparent} className={ParentClass}>
-      <Link className={`btn ${colorChange}`} type="submit">
+    <BtnWrap BtnTransparent={BtnTransparent} className={ParentClass}>
+      <Link to={linkUrl} className={`btn ${colorChange}`} target={target}>
         {titleText}
         <CgArrowLongRight />
       </Link>
-    </LinkCustom>
+    </BtnWrap>
   );
 };
 
-export default ButtonCustom;
+export default LinkCustom;

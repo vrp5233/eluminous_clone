@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import ButtonCustom from "../../Button/ButtonCustom";
+import LinkCustom from "../../Button/LinkCustom";
 // import { Title } from "../WhyTech/WhyTech.style";
 // import svg1 from "../../../assets/images/HireDedicated/icons/cross-platform.svg";
 import {HireTitle, HireSmallTitle} from "../../../GlobalStyle.style";
@@ -51,7 +51,7 @@ const Expertise = ({ expertiseData }) => {
               );
             })}
           </Row>
-          <ButtonCustom
+          <LinkCustom
             ParentClass="text-center"
             BtnTransparent={true}
             linkUrl={expertiseData.btnLink}

@@ -1,5 +1,5 @@
 import React from "react";
-import ButtonCustom from "../Button/ButtonCustom";
+import LinkCustom from "../Button/LinkCustom";
 import { Col } from "react-bootstrap";
 import {
   CaseBox,
@@ -37,7 +37,7 @@ const CaseStudy = ({ CaseStudyData }) => {
                   }}
                 ></Title>
                 <Paragraph>{CaseSudie.paragraph}</Paragraph>
-                <ButtonCustom
+                <LinkCustom
                   ParentClass="text-center mt-auto"
                   BtnTransparent={false}
                   target="_blank"

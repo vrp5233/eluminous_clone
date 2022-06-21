@@ -1,6 +1,6 @@
 import styled, { css } from "styled-components";
 
-export const LinkCustom = styled.div`
+export const BtnWrap = styled.div`
   & > * {
     transition: var(--trans_a3);
     display: inline-flex;

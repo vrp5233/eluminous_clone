@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { Nav, Navbar, Container } from "react-bootstrap";
 import { MdEmail } from "react-icons/md";
 import MenuList from "./MenuList";
-import ButtonCustom from "../Button/ButtonCustom";
+import LinkCustom from "../Button/LinkCustom";
 import "./Navigation.css";
 import {
   NavigationWrapper,
@@ -49,7 +49,7 @@ const Navigation = () => {
               <MenuList />
             </Nav>
           </Navbar.Collapse>
-          <ButtonCustom
+          <LinkCustom
             BtnTransparent={false}
             linkUrl="/about-us"
             titleText="Get a Quote"
