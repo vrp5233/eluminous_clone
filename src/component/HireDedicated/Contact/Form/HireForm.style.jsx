@@ -34,7 +34,6 @@ export const FromWrap = styled.div`
           box-shadow: none;
           background-color: transparent;
         }
-
         &:focus:placeholder {
           opacity: 0;
           background-color: transparent;
@@ -74,6 +73,25 @@ export const FromWrap = styled.div`
           input {
             border: 0 !important;
             color: rgba(var(--black));
+            &:focus:placeholder {
+              opacity: 0;
+              background-color: transparent;
+            }
+            &::placeholder {
+              color: rgb(var(--black));
+            }
+            &::-webkit-input-placeholder {
+              color: rgb(var(--black));
+            }
+            &:-ms-input-placeholder {
+              color: rgb(var(--black));
+            }
+            &::-moz-placeholder {
+              color: rgb(var(--black));
+            }
+            &::-ms-input-placeholder {
+              color: rgb(var(--black));
+            }
           }
         }
       }
