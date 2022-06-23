@@ -10,7 +10,7 @@ export const FormSubTitle = styled.p`
 export const FromWrap = styled.div`
   color: rgba(var(--black));
   max-width: 655px;
-  margin-left: auto;
+  margin: 0 auto;
   form {
     margin: 85px 0 0;
     .form-group {
