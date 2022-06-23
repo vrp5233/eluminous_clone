@@ -19,7 +19,7 @@ const Faq = ({ faqsData }) => {
           <Accordion defaultActiveKey="0">
             {faqsData.faqs.faqLists.map((faq, index) => {
               return (
-                <Accordion.Item eventKey={faq.id}>
+                <Accordion.Item eventKey={faq.id} key={faq.id}>
                   <Accordion.Header>
                     {faq.title} <HiOutlineChevronDown />
                   </Accordion.Header>
