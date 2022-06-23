@@ -13,8 +13,10 @@ const Contact = ({ whyTechData }) => {
           <Row>
             <Col xxl={6}>
               <ImgBox>
-                <img src={filePath + "contact-bg.png"} alt="Contact Banner" />
-                <TextBox></TextBox>
+                <img src={filePath + "contact-bg.webp"} alt="Contact Banner" />
+                <TextBox>
+
+                </TextBox>
               </ImgBox>
             </Col>
             <Col xxl={6} className="d-flex align-items-center">
