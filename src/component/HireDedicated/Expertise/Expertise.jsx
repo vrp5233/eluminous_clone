@@ -3,7 +3,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import LinkCustom from "../../Button/LinkCustom";
 // import { Title } from "../WhyTech/WhyTech.style";
 // import svg1 from "../../../assets/images/HireDedicated/icons/cross-platform.svg";
-import {HireTitle, HireSmallTitle} from "../../../GlobalStyle.style";
+import { HireTitle, HireSmallTitle } from "../../../GlobalStyle.style";
 import {
   ExpertiseWrapper,
   ExpertiseBox,
@@ -19,10 +19,17 @@ const Expertise = ({ expertiseData }) => {
         <Container>
           <HireTitle>{expertiseData.expertiseIns.title}</HireTitle>
           <HireSmallTitle>{expertiseData.expertiseIns.subTitle}</HireSmallTitle>
-          <Row>
+          <Row className="justify-content-center">
             {expertiseData.expertiseIns.expertLists.map((expertList, index) => {
               return (
-                <Col xxl={3} key={expertList.expertTitle}>
+                <Col
+                  xxl={3}
+                  xl={3}
+                  lg={5}
+                  md={6}
+                  sm={6}
+                  key={expertList.expertTitle}
+                >
                   <ExpertiseBox>
                     <span>
                       <img

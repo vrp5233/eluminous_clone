@@ -16,9 +16,17 @@ export const BtnWrap = styled.div`
     font-size: 20px;
     font-weight: 600;
     padding: 10px 40px;
+    @media (max-width: ${({ theme }) => theme.media.deskstop1440}) {
+      padding: 10px 30px;
+      min-height: 55px;
+      font-size: 18px;
+    }
     & svg {
       margin: 0 0 0 15px;
       font-size: 22px;
+      @media (max-width: ${({ theme }) => theme.media.deskstop1440}) {
+        font-size: 20px;
+      }
     }
     &:hover,
     &:focus {

@@ -1,8 +1,16 @@
 import styled from "styled-components";
-export const FooterWrapper = styled.section``;
+export const FooterWrapper = styled.section`
+  padding-bottom: 0;
+`;
 export const GreyWrapper = styled.div`
   background-color: rgb(var(--grey));
   padding: 105px 150px 90px;
+  a {
+    transition: var(--trans_a3);
+    &:hover {
+      color: rgba(var(--blue));
+    }
+  }
 `;
 export const Wrap = styled.div``;
 export const Heading = styled.h6`

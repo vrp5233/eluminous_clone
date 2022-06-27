@@ -46,6 +46,8 @@ const HireForm = () => {
           <Col sm={6}>
             <Form.Group className="form-group" controlId="formBasicEmail">
               <PhoneInput
+                international
+                countryCallingCodeEditable={false}
                 placeholder="Mobile Number"
                 defaultCountry="US"
                 value={value}

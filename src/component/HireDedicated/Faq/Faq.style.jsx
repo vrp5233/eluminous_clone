@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Wrapper = styled.section`
-  margin: 60px 0 0;
+  margin: 30px 0;
   .accordion-item {
     margin: 0 0 15px 0;
     button {

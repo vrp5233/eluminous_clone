@@ -1,5 +1,6 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
+import BottomeFooter from "./BottomFooter";
 import { IoMdCall } from "react-icons/io";
 import { IoLocationSharp } from "react-icons/io5";
 import { AiFillSkype } from "react-icons/ai";
@@ -218,6 +219,7 @@ function Footer({ footerMenuDatas, xl, lg, md, sm }) {
           </GreyWrapper>
         </Container>
       </FooterWrapper>
+      <BottomeFooter/>
     </>
   );
 }

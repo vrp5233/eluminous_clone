@@ -59,13 +59,22 @@ export const FromWrap = styled.div`
         max-height: 140px;
       }
       .PhoneInput {
+        input {
+          color: rgba(var(--black));
+          padding: 0 15px !important;
+          &:focus-visible {
+            border: 0 !important;
+          }
+        }
         .PhoneInputCountry {
           background-color: #dedede;
           color: rgb(var(--black));
           padding: 0 5px 0 10px;
           min-width: 65px;
+          margin-right: 0;
           .PhoneInputCountryIcon--border {
             width: 100%;
+            max-width: 35px;
             box-shadow: none;
             height: 100%;
             background-color: transparent;

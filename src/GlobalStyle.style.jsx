@@ -3,6 +3,7 @@ const GlobalStyles = createGlobalStyle`
 :root {
   --white: 255, 255, 255;
   --blue: 33, 102, 243;
+  --blue2: 22, 158, 248;
   --grey: 241, 241, 241;
   --red: 223, 46, 49;
   --black: 0, 0, 0;

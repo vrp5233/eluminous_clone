@@ -21,7 +21,7 @@ export const NavigationWrapper = styled.header`
   width: 100%;
   z-index: 9990;
   background-color: rgba(var(--white));
-  background-color: ${({bg}) => bg};
+  background-color: ${({ bg }) => bg};
   transition: var(--trans_a3);
   &.is-sticky {
     background-color: rgba(var(--white));
@@ -37,6 +37,9 @@ export const NavigationWrapper = styled.header`
   }
   .navbar-brand img {
     max-width: 220px;
+    @media (max-width: ${({ theme }) => theme.media.deskstop1440}) {
+      max-width: 180px;
+    }
   }
   .menus {
     display: flex;
@@ -46,6 +49,14 @@ export const NavigationWrapper = styled.header`
       font-size: 14px;
       padding-right: 18px;
       padding-left: 18px;
+      @media (max-width: ${({ theme }) => theme.media.deskstop1600}) {
+        padding-right: 12px;
+        padding-left: 12px;
+      }
+      @media (max-width: ${({ theme }) => theme.media.deskstop1440}) {
+        padding-right: 10px;
+        padding-left: 10px;
+      }
       a {
         display: block;
         font-size: inherit;
@@ -72,16 +83,15 @@ export const NavigationWrapper = styled.header`
       }
       a,
       button {
-        font-weight: 600;
-        font-size: 18px;
+        font: 600 18px/75px "Inter", sans-serif;
         color: #22292f;
         text-transform: capitalize;
-        line-height: 75px;
         border-bottom: 5px solid transparent;
-        -webkit-transition: all 0.5s;
-        -o-transition: all 0.5s;
-        transition: all 0.5s;
+        transition: var(--trans_a3);
         display: block;
+        @media (max-width: ${({ theme }) => theme.media.deskstop1440}) {
+          font: 600 16px/75px "Inter", sans-serif;
+        }
       }
       &:hover > a,
       &:hover > button,
@@ -103,15 +113,12 @@ export const NavigationWrapper = styled.header`
     padding: 20px 0;
     opacity: 0;
     visibility: hidden;
-    -webkit-transition: all 0.2s;
-    -o-transition: all 0.2s;
     transition: all 0.2s;
-    -webkit-transform: translateY(100px);
-    -ms-transform: translateY(100px);
     transform: translateY(100px);
-    -webkit-box-shadow: 0 2px 3px rgb(0 0 0 / 10%);
-    box-shadow: 0 2px 3px rgb(0 0 0 / 10%);
+    box-shadow: 0 12px 20px rgb(0 0 0/10%);
     z-index: 9999;
+    background-color: #fff;
+    border-top: 1px solid #e3e3e3;
     .dropdown-submenu {
       position: absolute;
       left: 100%;
@@ -123,17 +130,14 @@ export const NavigationWrapper = styled.header`
       a {
         border: 0;
         text-transform: capitalize;
-        font-size: 14px;
+        font: 400 16px/18px "Inter", sans-serif;
         position: relative;
-        margin-right: 0;
-        line-height: 18px;
-        color: #fff;
-        margin-bottom: 6px;
-        padding-bottom: 5px;
-        padding-left: 17px;
-        font-weight: 400;
-        padding-top: 10px;
-        padding-bottom: 10px;
+        color: rgba(var(--black));
+        margin: 0 0 6px 0;
+        padding: 10px 0 10px 17px;
+        @media (max-width: ${({ theme }) => theme.media.deskstop1440}) {
+          font: 400 15px/18px "Inter", sans-serif;
+        }
         &:last-child {
           margin-bottom: 0;
         }
@@ -147,7 +151,7 @@ export const NavigationWrapper = styled.header`
         }
         &:hover {
           background-color: transparent;
-          color: #169ef8;
+          color: rgba(var(--blue));
         }
       }
     }
@@ -164,6 +168,10 @@ export const NavigationWrapper = styled.header`
     min-width: 250px;
     min-height: 52px;
     font-size: 18px;
-    padding: 0 10px 0 0px;
+    padding: 0 10px;
+    @media (max-width: ${({ theme }) => theme.media.deskstop1440}) {
+      font-size: 16px;
+      min-width: 180px;
+    }
   }
 `;
