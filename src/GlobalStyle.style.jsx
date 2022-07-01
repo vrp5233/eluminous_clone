@@ -26,7 +26,6 @@ ol {
   padding: 0;
   list-style: none;
   font-family: "Inter", sans-serif;
-  color: rgba;
 }
 
 body {

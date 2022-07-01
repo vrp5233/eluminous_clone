@@ -19,8 +19,8 @@ import {
   BottomListWrapper,
 } from "./WhyTech.style";
 const WhyTech = ({ whyTechData }) => {
-  const filePath = window.location.origin + "/images/HireDedicated/";
-  const fileIconsPath = window.location.origin + "/images/HireDedicated/icons/";
+  // const filePath = window.location.origin + "/images/HireDedicated/";
+  // const fileIconsPath = window.location.origin + "/images/HireDedicated/icons/";
   return (
     <>
       <WhyTechWrapper>
@@ -54,7 +54,7 @@ const WhyTech = ({ whyTechData }) => {
               <Col>
                 <ImgWrapper>
                   <img
-                    src={filePath + `${whyTechData.whyTechs.imgSrc}`}
+                    src={whyTechData.whyTechs.imgSrc}
                     alt={whyTechData.whyTechs.imgAlt}
                     className="img-fluid"
                   />
@@ -77,7 +77,7 @@ const WhyTech = ({ whyTechData }) => {
                   <LogoWrapper>
                     <div className="logo d-flex justify-content-center align-items-center">
                       <img
-                        src={filePath + `${whyTechData.whyTechs.imgLogo}`}
+                        src={whyTechData.whyTechs.imgLogo}
                         alt={whyTechData.whyTechs.imgLogoAlt}
                       />
                     </div>
@@ -98,7 +98,7 @@ const WhyTech = ({ whyTechData }) => {
                       <div className="box whiteBg black">
                         <span>
                           <img
-                            src={fileIconsPath + `${WhyTechList.icon}`}
+                            src={WhyTechList.icon}
                             alt={WhyTechList.title}
                           />
                         </span>

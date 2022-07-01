@@ -9,7 +9,7 @@ import {
   Paragraph,
 } from "./CaseStudy.style";
 const CaseStudy = ({ CaseStudyData }) => {
-  const filePath = window.location.origin + "/images/CaseStudies/";
+  // const filePath = window.location.origin + "/images/CaseStudies/";
   // const filePathIcon = "https://pawardemo.000webhostapp.com/images/CaseStudies/";
   // const filePathIcon = "https://pawardemo.000webhostapp.com/images/CaseStudies/";
   return (
@@ -43,12 +43,12 @@ const CaseStudy = ({ CaseStudyData }) => {
                   target="_blank"
                   // linkUrl={`images/CaseStudies/${CaseSudie.pdfLink}`}
                   // linkUrl={filePath + `${CaseSudie.pdfLink}`}
-                  linkUrl={filePath + `${CaseSudie.pdfLink}`}
+                  linkUrl={CaseSudie.pdfLink}
                   titleText="Download PDF"
                   colorChange=""
                 />
 
-                <a href={filePath + `${CaseSudie.pdfLink}`} target="_blank">
+                <a href={CaseSudie.pdfLink} target="_blank">
                   Download PDF
                 </a>
               </CaseText>

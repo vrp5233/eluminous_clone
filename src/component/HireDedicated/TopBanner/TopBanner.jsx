@@ -15,7 +15,7 @@ import {
   List,
 } from "./TopBanner.style";
 const TopBanner = ({ allData }) => {
-  const filePath = window.location.origin + "/images/";
+  // const filePath = window.location.origin + "/images/";
   return (
     <>
       <HireDedicatedBannerWrapper>
@@ -40,14 +40,16 @@ const TopBanner = ({ allData }) => {
             <Col>
               <ImgWrapper>
                 <img
-                  src={filePath + `HireDedicated/${allData.imgSrc}`}
+                  // src={filePath + `HireDedicated/${allData.imgSrc}`}
+                  // src={`/images/HireDedicated/${allData.imgSrc}`}
+                  src={allData.imgSrc}
                   alt={allData.imgAlt}
                   className="img-fluid"
                 />
                 <ClutchReview>
                   <ClutchLogoRate className="d-flex align-items-center justify-content-between">
                     <img
-                      src={filePath + "HireDedicated/clutch.webp"}
+                      src="/images/HireDedicated/clutch.webp"
                       alt="Clutch"
                     />
                     <StarWrap className="d-flex align-items-center">
@@ -75,9 +77,9 @@ const TopBanner = ({ allData }) => {
                         <span className="d-flex flex-column">
                           <div className="icon">
                             <img
-                              src={
-                                filePath + `HireDedicated/icons/${listMenu.img}`
-                              }
+                              // src={filePath + `HireDedicated/icons/${listMenu.img}`}
+                              // src={`/images/HireDedicated/icons/${listMenu.img}`}
+                              src={listMenu.img}
                               alt={listMenu.title}
                               className="w-100"
                             />

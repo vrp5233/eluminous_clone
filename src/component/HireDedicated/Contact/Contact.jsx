@@ -4,8 +4,8 @@ import { Container, Row, Col } from "react-bootstrap";
 import HireForm from "./Form/HireForm";
 import { WhyTechWrapper, ImgBox, TextBox } from "./Contact.style";
 const Contact = ({ whyTechData }) => {
-  const filePath = window.location.origin + "/images/HireDedicated/";
-  const fileIconsPath = window.location.origin + "/images/HireDedicated/icons/";
+  // const filePath = window.location.origin + "/images/HireDedicated/";
+  // const fileIconsPath = window.location.origin + "/images/HireDedicated/icons/";
   return (
     <>
       <WhyTechWrapper>
@@ -13,7 +13,7 @@ const Contact = ({ whyTechData }) => {
           <Row>
             <Col xxl={6}>
               <ImgBox>
-                <img src={filePath + "contact-bg.webp"} alt="Contact Banner" />
+                <img src="http://dev.eluminousdev.com/react-images/images/HireDedicated/contact-bg.webp" alt="Contact Banner" />
                 <TextBox>
 
                 </TextBox>

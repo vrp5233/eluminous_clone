@@ -1,6 +1,7 @@
 {
   "name": "eluminous1",
   "version": "0.1.0",
+  "homepage": "http://vrpprojects.infinityfreeapp.com/",
   "private": true,
   "dependencies": {
     "@babel/preset-env": "^7.18.2",

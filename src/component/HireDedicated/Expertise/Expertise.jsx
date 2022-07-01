@@ -11,8 +11,8 @@ import {
   ExpertiseBoxPara,
 } from "./Expertise.style";
 const Expertise = ({ expertiseData }) => {
-  const fileIconsPath = window.location.origin + "/images/HireDedicated/icons/";
-  const filePath = window.location.origin + "/images/HireDedicated/";
+  // const fileIconsPath = window.location.origin + "/images/HireDedicated/icons/";
+  // const filePath = window.location.origin + "/images/HireDedicated/";
   return (
     <>
       <ExpertiseWrapper className="black">
@@ -33,7 +33,7 @@ const Expertise = ({ expertiseData }) => {
                   <ExpertiseBox>
                     <span>
                       <img
-                        src={fileIconsPath + `${expertList.expertImage}`}
+                        src={expertList.expertImage}
                         // src={expertList.expertImage}
                         alt="Title"
                       />
