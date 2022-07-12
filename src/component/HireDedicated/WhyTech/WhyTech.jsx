@@ -97,10 +97,11 @@ const WhyTech = ({ whyTechData }) => {
                     <Col xxl={3} className="d-flex" key={WhyTechList.icon}>
                       <div className="box whiteBg black">
                         <span>
-                          <img
-                            src={WhyTechList.icon}
-                            alt={WhyTechList.title}
-                          />
+                          <object data={WhyTechList.icon} type="image/svg+xml">{WhyTechList.title}</object>
+                            {/* <img
+                              src={WhyTechList.icon}
+                              alt={WhyTechList.title}
+                            /> */}
                         </span>
                         <h3
                           dangerouslySetInnerHTML={{

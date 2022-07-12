@@ -38,15 +38,13 @@ const TopBanner = ({ allData }) => {
               />
             </Col>
             <Col>
-              <ImgWrapper>
+              <ImgWrapper className={allData.imgAlt === "Hire ReactJS Developers" ? "mw-100 p-0" : ""}>
                 <img
-                  // src={filePath + `HireDedicated/${allData.imgSrc}`}
-                  // src={`/images/HireDedicated/${allData.imgSrc}`}
                   src={allData.imgSrc}
                   alt={allData.imgAlt}
                   className="img-fluid"
                 />
-                <ClutchReview>
+                <ClutchReview className={allData.imgAlt === "Hire ReactJS Developers" ? "m-auto" : ""}>
                   <ClutchLogoRate className="d-flex align-items-center justify-content-between">
                     <img
                       src="/images/HireDedicated/clutch.webp"
@@ -76,13 +74,12 @@ const TopBanner = ({ allData }) => {
                       >
                         <span className="d-flex flex-column">
                           <div className="icon">
-                            <img
-                              // src={filePath + `HireDedicated/icons/${listMenu.img}`}
-                              // src={`/images/HireDedicated/icons/${listMenu.img}`}
+                          <object data={listMenu.img} type="image/svg+xml">{listMenu.title}</object>
+                            {/* <img
                               src={listMenu.img}
                               alt={listMenu.title}
                               className="w-100"
-                            />
+                            /> */}
                           </div>
                           <div className="text fw600 black p-0">
                             {listMenu.title}

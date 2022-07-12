@@ -26,7 +26,7 @@ import {
   StarWrapper,
 } from "./ReviewSlider.style";
 const ReviewSlider = ({ ReviewSliderData }) => {
-  // const filePath = window.location.origin + "/images/HireDedicated/";
+  const filePath = window.location.origin + "/images/HireDedicated/";
   // const fileIconsPath = window.location.origin + "/images/HireDedicated/icons/";
   return (
     <>
@@ -62,8 +62,7 @@ const ReviewSlider = ({ ReviewSliderData }) => {
                               <AvtarWrap className="img">
                                 <Avtar className="img_circle">
                                   <img
-                                    // src={filePath + `${avtarList.img}`}
-                                    src={avtarList.img}
+                                    src={filePath + `${avtarList.img}`}
                                     alt="Stewart Gauld"
                                   />
                                 </Avtar>

@@ -48,9 +48,9 @@ const CaseStudy = ({ CaseStudyData }) => {
                   colorChange=""
                 />
 
-                <a href={CaseSudie.pdfLink} target="_blank">
+                {/* <a href={CaseSudie.pdfLink} target="_blank">
                   Download PDF
-                </a>
+                </a> */}
               </CaseText>
             </CaseBox>
           </Col>

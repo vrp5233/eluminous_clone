@@ -9,15 +9,15 @@ import Home from './screen/Homepage/Homepage';
 import HireDedicatedDeveloper from './screen/HireDedicated/HireDedicatedDeveloper';
 import HireDedicatedAngular from './screen/HireDedicated/HireDedicatedAngular';
 import HireDedicatedReact from './screen/HireDedicated/HireDedicatedReact';
-import ScrollToTop from './core/ScrollToTop';
+// import ScrollToTop from './core/ScrollToTop';
 
-function App() {
+const App = () => {
   return (
     <>
       <ThemeProvider theme={GlobalStyleThemes}>
         <GlobalStyles />
         <BrowserRouter>
-          <ScrollToTop />
+          {/* <ScrollToTop /> */}
           <Routes>
             <Route exact path="/" element={<Home />} />
             <Route  path="/about-us" element={<OurCompany />} />

@@ -39,7 +39,7 @@ const Navigation = () => {
         <Container>
           <Navbar.Brand>
             <Link to="/">
-              <img src="http://dev.eluminousdev.com/react-images/images/eluminous-pvt-ltd_black.svg" alt="Logo" />
+              <img src="/images/eluminous-pvt-ltd_black.svg" alt="eLuminous Technologies" />
               {/* <img src={filePath + `${whyTechData.whyTechs.imgLogo}`} alt="Logo" /> */}
             </Link>
           </Navbar.Brand>

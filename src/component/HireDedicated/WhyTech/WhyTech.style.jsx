@@ -53,6 +53,7 @@ export const List = styled.ul`
   padding: 15px 25px;
   min-width: 360px;
   li {
+    font-size: 17px;
     margin: 0 0 10px 0;
     svg {
       margin: 0 10px 0 0;
@@ -132,6 +133,7 @@ export const BottomListWrapper = styled.div`
     span {
       margin: 0 0 33px;
       display: inline-block;
+      max-width:65px
     }
     .title {
       font: 22px / 25px "Inter", sans-serif;

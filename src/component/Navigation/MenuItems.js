@@ -58,7 +58,7 @@ const MenuItems = ({ items, depthLevel }) => {
           />
         </>
       ) : (
-        <Link to={items.path}>{items.title}</Link>
+        <Link activeClass="active" to={items.path}>{items.title}</Link>
       )}
     </li>
   );
