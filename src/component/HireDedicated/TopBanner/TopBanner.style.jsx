@@ -117,6 +117,9 @@ export const List = styled.ul`
       width: 100%;
       margin: 0 auto 20px;
       height: 50px;
+      object {
+        width: 100%;
+      }
     }
     .text {
       font-size: 18px;

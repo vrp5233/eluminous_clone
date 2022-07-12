@@ -72,6 +72,9 @@ export const FromWrap = styled.div`
           padding: 0 5px 0 10px;
           min-width: 65px;
           margin-right: 0;
+          .PhoneInputCountrySelect {
+            font-size: 14px;
+          }
           .PhoneInputCountryIcon--border {
             width: 100%;
             max-width: 35px;

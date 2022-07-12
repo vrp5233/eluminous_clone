@@ -149,7 +149,8 @@ export const NavigationWrapper = styled.header`
           top: 12px;
           color: rgba(255, 255, 255, 0.2784313725490196);
         }
-        &:hover {
+        &:hover,
+        &.active {
           background-color: transparent;
           color: rgba(var(--blue));
         }

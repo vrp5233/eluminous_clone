@@ -7,22 +7,22 @@ export const HireAngularData = {
   btnLink: "#contact-form-top",
   btnText: "Hire Angular Developer",
   btnClass: "",
-  imgSrc: "http://vrpprojects.infinityfreeapp.com/images/HireDedicated/hire-angular-developers.webp",
+  imgSrc: "/images/HireDedicated/hire-angular-developers.webp",
   imgAlt: "Hire Angular Developers",
   clutchReviewText:
     "They had so far exceeded every of my expectations and i believe they will continue to do so.",
   listMenus: [
     {
       title: "Cross Platform",
-      img: "http://vrpprojects.infinityfreeapp.com/images/HireDedicated/icons/cross-platform.svg",
+      img: "/images/HireDedicated/icons/cross-platform.svg",
     },
     {
       title: "Speed & Performance",
-      img: "http://vrpprojects.infinityfreeapp.com/images/HireDedicated/icons/speed-&-performance.svg",
+      img: "/images/HireDedicated/icons/speed-&-performance.svg",
     },
     {
       title: "User friendly",
-      img: "http://vrpprojects.infinityfreeapp.com/images/HireDedicated/icons/user-friendly.svg",
+      img: "/images/HireDedicated/icons/user-friendly.svg",
     },
   ],
   expertiseIns: {
@@ -31,25 +31,25 @@ export const HireAngularData = {
       "Hire angular developers to build robust, secured, dynamic web and mobile applications saving up to 63% of your development cost. ",
     expertLists: [
       {
-        expertImage: "http://vrpprojects.infinityfreeapp.com/images/HireDedicated/icons/custom-angular-development.svg",
+        expertImage: "/images/HireDedicated/icons/custom-angular-development.svg",
         expertTitle: "Custom Angular <br/>Development",
         expertSubTitle:
           "Hire dedicated angular developers who are expert in creating clean and interactive UI/UX to build credibility and flawless user-experience across all devices. We create real time apps like Chat Apps and Insant Messengers with AngularFire or Socket.",
       },
       {
-        expertImage: "http://vrpprojects.infinityfreeapp.com/images/HireDedicated/icons/enterprise-angular-web-apps.svg",
+        expertImage: "/images/HireDedicated/icons/enterprise-angular-web-apps.svg",
         expertTitle: "Enterprise Angular <br/>Web Apps",
         expertSubTitle:
           "Our angularjs developers build large-scale web applications by providing end-to-end services right from consulting, development, migration, maintenance to upgradation. We offer advanced Angular API services as per specific business needs.",
       },
       {
-        expertImage: "http://vrpprojects.infinityfreeapp.com/images/HireDedicated/icons/angular-consulting.svg",
+        expertImage: "/images/HireDedicated/icons/angular-consulting.svg",
         expertTitle: "Angular <br />Consulting",
         expertSubTitle:
           "Our angular developers and consultants can help you in organizing your Angular project structure using TypeScripts, Angular CLI, managing environment-specific settings and many more.",
       },
       {
-        expertImage: "http://vrpprojects.infinityfreeapp.com/images/HireDedicated/icons/updated-with-technology-trends.svg",
+        expertImage: "/images/HireDedicated/icons/updated-with-technology-trends.svg",
         expertTitle: "Updated with<br/>Technology Trends",
         expertSubTitle:
           "Angular developers use <b>SSR</b> to make your app <b>SEO</b> friendly and help you to be visible in Google's eye.",
@@ -62,9 +62,9 @@ export const HireAngularData = {
     paragraph:
       "Our angular developers are proficient in building highly scalable apps to meet your business needs with evolving market around. ",
     btnClass: "",
-    imgSrc: "http://vrpprojects.infinityfreeapp.com/images/HireDedicated/laptop.png",
+    imgSrc: "/images/HireDedicated/laptop.png",
     imgAlt: "Laptop",
-    imgLogo: "http://vrpprojects.infinityfreeapp.com/images/HireDedicated/angular-img.png",
+    imgLogo: "/images/HireDedicated/angular-img.png",
     imgLogoAlt: "angular-img.png",
     imgListTexts: [
       {
@@ -80,24 +80,24 @@ export const HireAngularData = {
     WhyTechLists: [
       {
         title: "Trusted by People <br />Like You!",
-        icon: "http://vrpprojects.infinityfreeapp.com/images/HireDedicated/icons/trusted-by-people-like-you.svg",
+        icon: "/images/HireDedicated/icons/trusted-by-people-like-you.svg",
         paragraph:
           "Best UI Winner and many 5 Star Reviews on <b>Clutch, GoodFirms, Google.</b>",
       },
       {
         title: "API-On-Top <br />Approach",
-        icon: "http://vrpprojects.infinityfreeapp.com/images/HireDedicated/icons/api-on-top-approach.svg",
+        icon: "/images/HireDedicated/icons/api-on-top-approach.svg",
         paragraph: "We build exclusive front-end without hampering backend.",
       },
       {
         title: "100% Tested<br />Process",
-        icon: "http://vrpprojects.infinityfreeapp.com/images/HireDedicated/icons/tested-process.svg",
+        icon: "/images/HireDedicated/icons/tested-process.svg",
         paragraph:
           "We use manual and automated testing having multiple real in-house devices.",
       },
       {
         title: "SEO-friendly <br />Apps",
-        icon: "http://vrpprojects.infinityfreeapp.com/images/HireDedicated/icons/seo-friendly-apps.svg",
+        icon: "/images/HireDedicated/icons/seo-friendly-apps.svg",
         paragraph:
           "Angular developers use SSR to make your app SEO friendly and help you to be visible in Google's eye.",
       },
@@ -138,7 +138,7 @@ export const HireAngularData = {
           },
           {
             list:
-              "<b>Google-supported framework:</b> AngularJS is supported by a large community, Google. The framework has around 45k stars on <a href='https://github.com/angular/angular' target='_blank'>Github</a> and over 500.000 downloads on weekly basis from <a href='https//www.npmjs.com/package/angular' target='_blank'>npm</a>.",
+              "<b>Google-supported framework:</b> AngularJS is supported by a large community, Google. The framework has around 45k stars on <a href='https://github.com/angular/angular' target='_blank'>Github</a> and over 500.000 downloads on weekly basis from <a href='https://www.npmjs.com/package/angular' target='_blank'>npm</a>.",
           },
           {
             list:
@@ -181,22 +181,22 @@ export const HireReactData = {
   btnLink: "#contact-form-top",
   btnText: "Hire ReactJS Developer",  
   btnClass: "",
-  imgSrc: "http://vrpprojects.infinityfreeapp.com/images/HireDedicated/hire-react-developers.webp",
+  imgSrc: "/images/HireDedicated/hire-react-developers.webp",
   imgAlt: "Hire ReactJS Developers",
   clutchReviewText:
   "They were clear in what they needed to do at each stage, and even gave suggestions on how to improve the app.",
   listMenus: [
     {
       title: "Cross Platform",
-      img: "http://vrpprojects.infinityfreeapp.com/images/HireDedicated/icons/cross-platform.svg",
+      img: "/images/HireDedicated/icons/cross-platform.svg",
     },
     {
       title: "Speed & Performance",
-      img: "http://vrpprojects.infinityfreeapp.com/images/HireDedicated/icons/speed-&-performance.svg",
+      img: "/images/HireDedicated/icons/speed-&-performance.svg",
     },
     {
       title: "User friendly",
-      img: "http://vrpprojects.infinityfreeapp.com/images/HireDedicated/icons/user-friendly.svg",
+      img: "/images/HireDedicated/icons/user-friendly.svg",
     },
   ],
   expertiseIns: {
@@ -205,25 +205,25 @@ export const HireReactData = {
       "Get access to tech minds rated 4.8 on Clutch and GoodFirms with competence in enterprise app development.",
     expertLists: [
       {
-        expertImage: "http://vrpprojects.infinityfreeapp.com/images/HireDedicated/icons/custom-angular-development.svg",
+        expertImage: "/images/HireDedicated/icons/custom-angular-development.svg",
         expertTitle: "Custom React<br />Development",
         expertSubTitle:
           "Our React developers will help in creating custom websites acknowledged for scalability, security, and features. We develop applications for several industries like healthcare, e-commerce, retail, education and manufacturing, etc.",
       },
       {
-        expertImage: "http://vrpprojects.infinityfreeapp.com/images/HireDedicated/icons/reactjs-ui-ux-development.svg",
+        expertImage: "/images/HireDedicated/icons/reactjs-ui-ux-development.svg",
         expertTitle: "ReactJS <br />UI/UX Development",
         expertSubTitle:
           "ReactJS UI/UX Developers offer top-notch web and mobile applications services. We help you to compete with tailor-made ReactJS architecture up to date with optimum speed.",
       },
       {
-        expertImage: "http://vrpprojects.infinityfreeapp.com/images/HireDedicated/icons/reactjs-integration-and-migration-services.svg",
+        expertImage: "/images/HireDedicated/icons/reactjs-integration-and-migration-services.svg",
         expertTitle: "ReactJS Integration<br />and Migration Services",
         expertSubTitle:
           "Whether it is about migration of apps to ReactJS or integrating exisiting systems and technologies with ReactJS, our expert ReactJS team is ready to get it done for you.",
       },
       {
-        expertImage: "http://vrpprojects.infinityfreeapp.com/images/HireDedicated/icons/updated-with-technology-trends.svg",
+        expertImage: "/images/HireDedicated/icons/updated-with-technology-trends.svg",
         expertTitle: "Updated with<br />Technology Trends",
         expertSubTitle:
           "Our React developers use new features like <b>React</b> <b>hooks,</b> <b>TypeScripts</b> and explore pitfalls, patterns.",
@@ -236,9 +236,9 @@ export const HireReactData = {
     paragraph:
       "Access to the experienced React developers having proven track record of 260+ projects",
     btnClass: "",
-    imgSrc: "http://vrpprojects.infinityfreeapp.com/images/HireDedicated/laptop.png",
+    imgSrc: "/images/HireDedicated/laptop.png",
     imgAlt: "Laptop",
-    imgLogo: "http://vrpprojects.infinityfreeapp.com/images/HireDedicated/react-img.png",
+    imgLogo: "/images/HireDedicated/react-img.png",
     imgLogoAlt: "Hire React",
     imgListTexts: [
       {
@@ -254,24 +254,24 @@ export const HireReactData = {
     WhyTechLists: [
       {
         title: "Trusted by People <br />Like You!",
-        icon: "http://vrpprojects.infinityfreeapp.com/images/HireDedicated/icons/trusted-by-people-like-you.svg",
+        icon: "/images/HireDedicated/icons/trusted-by-people-like-you.svg",
         paragraph:
           "Best UI Winner and many 5 Star Reviews on <b>Clutch, GoodFirms, Google.</b>",
       },
       {
         title: "API-On-Top <br />Approach",
-        icon: "http://vrpprojects.infinityfreeapp.com/images/HireDedicated/icons/api-on-top-approach.svg",
+        icon: "/images/HireDedicated/icons/api-on-top-approach.svg",
         paragraph: "We build exclusive front-end without hampering backend.",
       },
       {
         title: "100% Tested<br />Process",
-        icon: "http://vrpprojects.infinityfreeapp.com/images/HireDedicated/icons/tested-process.svg",
+        icon: "/images/HireDedicated/icons/tested-process.svg",
         paragraph:
           "We use manual and automated testing having multiple real in-house devices.",
       },
       {
         title: "SEO-friendly <br />Apps",
-        icon: "http://vrpprojects.infinityfreeapp.com/images/HireDedicated/icons/seo-friendly-apps.svg",
+        icon: "/images/HireDedicated/icons/seo-friendly-apps.svg",
         paragraph:
           "Our React developers use new features like hooks, TypeScripts and explore pitfalls, patterns.",
       },
@@ -361,7 +361,7 @@ export const HireReviewData = {
         id: "1",
         review:
           "The workflow between both teams has always been open, streamlined, and responsive.",
-        img: "http://vrpprojects.infinityfreeapp.com/images/HireDedicated/Stewart-Gauld.webp",
+        img: "/images/HireDedicated/Stewart-Gauld.webp",
         name: "Stewart H. Gauld",
         post:
           "Project &amp; Content Director, <br /> Business Development Group",
@@ -375,7 +375,7 @@ export const HireReviewData = {
         id: "2",
         review:
           "They were very fast, and the team is big enough to tap on each other's expertise.",
-        img: "http://vrpprojects.infinityfreeapp.com/images/HireDedicated/Yeng-Hwee-Tay.webp",
+        img: "/images/HireDedicated/Yeng-Hwee-Tay.webp",
         name: "Yeng Hwee Tay",
         post: "Director, ClickTwoStart",
         rating: "4.5",
@@ -388,7 +388,7 @@ export const HireReviewData = {
         id: "3",
         review:
           "eLuminous dedicated a project manager to our project who had excellent communication skills.",
-        img: "http://vrpprojects.infinityfreeapp.com/images/HireDedicated/Steve-Lim.webp",
+        img: "/images/HireDedicated/Steve-Lim.webp",
         name: "Steve Lim",
         post: "Managing Director, Web Design &amp; Development Agency",
         rating: "5.0",
@@ -405,29 +405,29 @@ export const HireCaseStudiesData = {
     {
       id: "1",
       title: "Partnering Front-end Development",
-      image: "http://vrpprojects.infinityfreeapp.com/images/CaseStudies/front-end-development.webp",
-      pdfLink: "http://vrpprojects.infinityfreeapp.com/images/CaseStudies/frontend-development.pdf",
+      image: "/images/CaseStudies/front-end-development.webp",
+      pdfLink: "/images/CaseStudies/frontend-development.pdf",
       paragraph: "eLuminous reduced the cost of development by 45% and reduced time-to-market by 20% for a European Digital Marketing Agency as part of their IT process stanardization.",
     },
     {
       id: "2",
-      image: "http://vrpprojects.infinityfreeapp.com/images/CaseStudies/FDA-compliant-eCommerce.webp",
+      image: "/images/CaseStudies/FDA-compliant-eCommerce.webp",
       title: "Developed FDA compliant <br />eCommerce platform in 90 days",
-      pdfLink: "http://vrpprojects.infinityfreeapp.com/images/CaseStudies/Getting-FDA-compliant-eCommerce-ready-within-90days.pdf",
+      pdfLink: "/images/CaseStudies/Getting-FDA-compliant-eCommerce-ready-within-90days.pdf",
       paragraph: "UK based Client baby care brand wanted to develop new markets for their expansion. They wanted to develop the abilities to sell through new geographies i.e. Europe and USA.",
     },
     {
       id: "3",
-      image: "http://vrpprojects.infinityfreeapp.com/images/CaseStudies/ui-using-react-js.webp",
+      image: "/images/CaseStudies/ui-using-react-js.webp",
       title: "Food delivery app with user friendly UI using ReactJs",
-      pdfLink: "http://vrpprojects.infinityfreeapp.com/images/CaseStudies/Food-delivery-app-with-user-friendly-UI-using-React-js.pdf",
+      pdfLink: "/images/CaseStudies/Food-delivery-app-with-user-friendly-UI-using-React-js.pdf",
       paragraph: "CLE course certificates are essentials for the Lawyers as a mandatory legal compliance. Hence, the key requirement was to generate course completion certificates based on the User's time zone.",
     },
     {
       id: "4",
-      image: "http://vrpprojects.infinityfreeapp.com/images/CaseStudies/eLearning-management-solution.webp",
+      image: "/images/CaseStudies/eLearning-management-solution.webp",
       title: "eLearning Management Solution for CLE",
-      pdfLink: "http://vrpprojects.infinityfreeapp.com/images/CaseStudies/eLearning-managemen-t-solution-for-CLE.pdf",
+      pdfLink: "/images/CaseStudies/eLearning-managemen-t-solution-for-CLE.pdf",
       paragraph: "CLE course certificates are essentials for the Lawyers as a mandatory legal compliance. Hence, the key requirement was to generate course completion certificates based on the User's time zone.",
     },
   ],

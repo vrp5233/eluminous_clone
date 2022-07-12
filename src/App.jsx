@@ -11,7 +11,7 @@ import HireDedicatedAngular from './screen/HireDedicated/HireDedicatedAngular';
 import HireDedicatedReact from './screen/HireDedicated/HireDedicatedReact';
 // import ScrollToTop from './core/ScrollToTop';
 
-function App() {
+const App = () => {
   return (
     <>
       <ThemeProvider theme={GlobalStyleThemes}>
