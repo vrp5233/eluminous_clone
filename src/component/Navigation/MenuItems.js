@@ -1,4 +1,3 @@
-
 import { Link } from "react-router-dom";
 import { useState, useEffect, useRef } from "react";
 import { BiChevronDown } from "react-icons/bi";
@@ -58,7 +57,7 @@ const MenuItems = ({ items, depthLevel }) => {
           />
         </>
       ) : (
-        <Link activeClass="active" to={items.path}>{items.title}</Link>
+        <Link to={items.path}>{items.title}</Link>
       )}
     </li>
   );
